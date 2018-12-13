@@ -1,29 +1,22 @@
 #Greenfoot project file
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=7a2525a48fc07a41c11532c0c8bb95edcd9a62a8
 class.MyWorld.image=Wall.jpg
 class.MyWorld.superclass=greenfoot.World
 class.alligator.image=alligator.png
 class.alligator.superclass=greenfoot.Actor
 mainWindow.height=546
 mainWindow.width=871
-<<<<<<< HEAD
-mainWindow.x=114
-mainWindow.y=332
-=======
 mainWindow.x=467
-mainWindow.y=481
->>>>>>> 7a2525a48fc07a41c11532c0c8bb95edcd9a62a8
+mainWindow.y=509
 package.numDependencies=0
 package.numTargets=2
 project.charset=UTF-8
 target1.editor.height=700
 target1.editor.width=900
-<<<<<<< HEAD
-target1.editor.x=274
-target1.editor.y=230
-=======
 target1.editor.x=790
 target1.editor.y=259
->>>>>>> 7a2525a48fc07a41c11532c0c8bb95edcd9a62a8
 target1.height=50
 target1.name=alligator
 target1.naviview.expanded=true
