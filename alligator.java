@@ -14,9 +14,17 @@ public class alligator extends Actor
      */
     public void act() 
     {
+<<<<<<< HEAD
         if( Greenfoot.isKeyDown( "right" ) ){
         setRotation(0);
         move(1);
     }// Add your action code here.
+=======
+        // Add your action code here.
+        if( Greenfoot.isKeyDown( "up" ) ){
+        setRotation(270);
+        move(1);
+        }
+>>>>>>> 7a2525a48fc07a41c11532c0c8bb95edcd9a62a8
     }    
 }
