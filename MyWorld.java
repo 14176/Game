@@ -13,9 +13,25 @@ public class MyWorld extends World
      * Constructor for objects of class MyWorld.
      * 
      */
+    private int rtime = 120;
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1000, 900, 1); 
     }
+    
+    public void act(){
+        rtime--;
+        
+        if(rtime >= 0){
+           
+         showText( ""+rtime, 75, 75 );
+        
+        }
+        else{
+             Greenfoot.stop();
+            
+        }
 }
+}
+
