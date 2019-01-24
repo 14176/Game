@@ -6,7 +6,7 @@ import greenfoot.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class alligator extends Actor
+public class basilisk extends Actor
 {
     /**
      * Act - do whatever the alligator wants to do. This method is called whenever
