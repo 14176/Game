@@ -48,7 +48,7 @@ public class basilisk extends Actor
       Actor basilisk = getOneObjectAtOffset( 0, 0, basilisk.class ); 
       if( actor != null ){ 
               getWorld().removeObject( basilisk );
-              getWorld().showText("　　eat", 100, 50); 
+              getWorld().showText("eat", 100, 50); 
               Greenfoot.stop();           
       }
     }
@@ -56,21 +56,52 @@ public class basilisk extends Actor
     public void eat(){
         Actor actor2 = getOneObjectAtOffset( 0, 0, komatsuna.class ); 
         
-        //getWorld().showText(""+komatsuna, 50, 550);
+        getWorld().showText(""+komatsuna, 50, 550);
         if( actor2 != null){
-            komatsuna++;
+            komatsuna++;     
             if(komatsuna == 1)
             {
                 getWorld().removeObject( actor2 );
-                getWorld().showText("ポイントアップ!", 100, 50);
+            }if(komatsuna == 2)
+            {
+                getWorld().removeObject( actor2 );
+            }if(komatsuna == 3)
+            {
+                getWorld().removeObject( actor2 );
+            }if(komatsuna == 4)
+            {
+                getWorld().removeObject( actor2 );
+            }if(komatsuna == 5)
+            {
+                getWorld().removeObject( actor2 );
+            }if(komatsuna == 6)
+            {
+                getWorld().removeObject( actor2 );
+            }if(komatsuna == 7)
+            {
+                getWorld().removeObject( actor2 );
+            }if(komatsuna == 8)
+            {
+                getWorld().removeObject( actor2 );
+            }if(komatsuna == 9)
+            {
+                getWorld().removeObject( actor2 );
+            }if(komatsuna == 10)
+            {
+                getWorld().removeObject( actor2 );
+            }if(komatsuna == 11)
+            {
+                getWorld().removeObject( actor2 );
+            }if(komatsuna == 12)
+            {
+                getWorld().removeObject( actor2 );
             }
-            if(komatsuna == 2)
+            /*if(komatsuna == 2)
             {
                 getWorld().removeObject( actor2 );
                 getWorld().showText("ポイントアップ!!!!!", 100, 50);
-            }
+            }*/
         }
-    }
+        }
+   }
    
-    
-}

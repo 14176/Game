@@ -29,7 +29,7 @@ public class MyWorld extends World
         X2=1000;
         Y1=0;
         Y2=900;
-        rtime = 1000;
+        rtime = 12000;
         point = 0;
         basilisk.komatsuna = 0;
         
@@ -50,7 +50,7 @@ public class MyWorld extends World
     
     public void act(){
         rtime--;
-        point = (int)(1000 - rtime) / 100;
+        point = (int)(12000 - rtime) / 100;
         showText(""+rtime, 50, 350);
         showText(+point+"pt", 100, 80);
         if(basilisk.komatsuna == 0){
@@ -58,27 +58,71 @@ public class MyWorld extends World
             }else if(basilisk.komatsuna == 1){
                 point += 30;
                 showText(+point+"pt", 100, 80);
+                showText("ポイントアップ!", 100, 50);
             }else if(basilisk.komatsuna == 2){
-                point += 80;
+                point += 60;
                 showText(+point+"pt", 100, 80);
+                showText("ポイントアップ!", 100, 50);
+            }else if(basilisk.komatsuna == 3){
+                point += 90;
+                showText(+point+"pt", 100, 80);
+                showText("ポイントアップ!", 100, 50);
+            }else if(basilisk.komatsuna == 4){
+                point += 120;
+                showText(+point+"pt", 100, 80);
+                showText("ポイントアップ!", 100, 50);
+            }else if(basilisk.komatsuna == 5){
+                point += 150;
+                showText(+point+"pt", 100, 80);
+                showText("ポイントアップ!", 100, 50);
+            }else if(basilisk.komatsuna == 6){
+                point += 180;
+                showText(+point+"pt", 100, 80);
+                showText("ポイントアップ!", 100, 50);
+            }else if(basilisk.komatsuna == 7){
+                point += 210;
+                showText(+point+"pt", 100, 80);
+                showText("ポイントアップ!", 100, 50);
+            }else if(basilisk.komatsuna == 8){
+                point += 240;
+                showText(+point+"pt", 100, 80);
+                showText("ポイントアップ!", 100, 50);
+            }else if(basilisk.komatsuna == 9){
+                point += 270;
+                showText(+point+"pt", 100, 80);
+                showText("ポイントアップ!", 100, 50);
+            }else if(basilisk.komatsuna == 10){
+                point += 300;
+                showText(+point+"pt", 100, 80);
+                showText("ポイントアップ!", 100, 50);
+            }else if(basilisk.komatsuna == 11){
+                point += 330;
+                showText(+point+"pt", 100, 80);
+                showText("ポイントアップ!", 100, 50);
+            }else if(basilisk.komatsuna == 12){
+                point += 360;
+                showText(+point+"pt", 100, 80);
+                showText("ポイントアップ!", 100, 50);
             }
+     
         if(rtime <= 0){
-            showText("クリア!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!", 500,300);
+            showText("クリア!!!!!!!!!!!!", 500,300);
             Greenfoot.stop();
         }
-        if(rtime%2000 == 0)
+        if(rtime%1000 == 0)
         {
             x = X1 + (int)(Math.random()*((X2-X1)+1)); 
             y = Y1 + (int)(Math.random()*((Y2-Y1)+1)); 
             addObject( new snake(),x,y );   
         }
-        if(rtime==600)
+        if(rtime%1000 == 0)
         {
             x = X1 + (int)(Math.random()*((X2-X1)+1)); 
             y = Y1 + (int)(Math.random()*((Y2-Y1)+1)); 
-            addObject( new komatsuna(),x,y );   
+            addObject( new komatsuna(),x,y ); 
+            
         }
-        if(rtime==300)
+        if(rtime==3000)
         {
             x = X1 + (int)(Math.random()*((X2-X1)+1)); 
             y = Y1 + (int)(Math.random()*((Y2-Y1)+1)); 
