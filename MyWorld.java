@@ -13,10 +13,14 @@ public class MyWorld extends World
      * Constructor for objects of class MyWorld.
      * 
      */
+
+ 
+
     
     private int rtime;
     private int x,y,X1,X2,Y1,Y2,point;
     
+
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -81,4 +85,6 @@ public class MyWorld extends World
             addObject( new komatsuna(),x,y );   
         }
     }
+ 
 }
+
