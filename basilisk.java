@@ -8,11 +8,16 @@ import greenfoot.*;
  */
 public class basilisk extends Actor
 {
-    /**
-     * Act - do whatever the alligator wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act() 
+    private int komatsuna=0;
+    
+    public void act()
+    {
+        move();
+        eaten();
+        eat();
+    }
+ 
+    public void move() 
     {
 
 
@@ -21,11 +26,14 @@ public class basilisk extends Actor
         if( Greenfoot.isKeyDown( "right" ) ){
         setRotation(0);
         move(5);
+
     }// Add your action code here.
 
 
 
         // Add your action code here.
+
+    //    }// Add your action code here.
 
         if( Greenfoot.isKeyDown( "up" ) ){
         setRotation(270);
@@ -45,4 +53,35 @@ public class basilisk extends Actor
 
 
     }    
+    
+    public void eaten(){
+      Actor actor = getOneObjectAtOffset( 0, 0, snake.class ); 
+      Actor basilisk = getOneObjectAtOffset( 0, 0, basilisk.class ); 
+      if( actor != null ){ 
+              getWorld().removeObject( basilisk );
+              getWorld().showText("　　eat", 100, 50); 
+              Greenfoot.stop();           
+      }
+    }
+    
+    public void eat(){
+        Actor actor2 = getOneObjectAtOffset( 0, 0, komatsuna.class ); 
+        
+        getWorld().showText(""+komatsuna, 50, 550);
+        if( actor2 != null){
+            komatsuna++;
+            if(komatsuna == 1)
+            {
+                getWorld().removeObject( actor2 );
+                getWorld().showText("           ポイントアップ!", 100, 50);
+            }
+            if(komatsuna == 2)
+            {
+                getWorld().removeObject( actor2 );
+                getWorld().showText("           ポイントアップ!!!!!!!!!!!!", 100, 50);
+            }
+        }
+    }
+   
+    
 }
