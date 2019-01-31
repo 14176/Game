@@ -20,6 +20,7 @@ public class snake extends Actor
     }    
     
     public void move()
+<<<<<<< HEAD
     { 
         if(countWalk >= 100){ //5歩以上歩いたら
             int ran = (int)(Math.random()*4);//０～３の乱数をつくる
@@ -50,5 +51,25 @@ public class snake extends Actor
         }
         
         countWalk++;
+=======
+    {
+<<<<<<< HEAD
+        basilisk basilisk= (basilisk) getWorld().getObjects(basilisk.class).get(0);
+        if(basilisk != null){
+            
+            turnTowards(basilisk.getX(), basilisk.getY());
+            move(2);
+        }
+=======
+>>>>>>> 26771355630a3a199d03866de2de30909faee90e
+    }
+    
+    public void eat()
+    {
+        Actor basilisk = getOneObjectAtOffset( 0, 0, basilisk.class ); 
+        if( basilisk != null ){ 
+              getWorld().removeObject( basilisk );        
+      }
+>>>>>>> abc1c7bb4089f3497b1d028840d1c6b41af6be8f
     }
 }

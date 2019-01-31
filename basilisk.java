@@ -20,10 +20,22 @@ public class basilisk extends Actor
  
     public void move() 
     {
+
+
+
+
         if( Greenfoot.isKeyDown( "right" ) ){
         setRotation(0);
         move(5);
-        }// Add your action code here.
+
+    }// Add your action code here.
+
+
+
+        // Add your action code here.
+
+    //    }// Add your action code here.
+
         if( Greenfoot.isKeyDown( "up" ) ){
         setRotation(270);
         move(5);
@@ -38,9 +50,15 @@ public class basilisk extends Actor
         setRotation(180);
         move(5);
         }
+<<<<<<< HEAD
+
+
+
+=======
         
         x = getX();
         y = getY();
+>>>>>>> 26771355630a3a199d03866de2de30909faee90e
     }    
     
     public void eaten(){
