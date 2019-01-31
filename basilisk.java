@@ -8,7 +8,8 @@ import greenfoot.*;
  */
 public class basilisk extends Actor
 {
-    private int komatsuna=0;
+    public static int komatsuna=0;
+    static public int x,y;
     
     public void act()
     {
@@ -49,9 +50,15 @@ public class basilisk extends Actor
         setRotation(180);
         move(5);
         }
+<<<<<<< HEAD
 
 
 
+=======
+        
+        x = getX();
+        y = getY();
+>>>>>>> 26771355630a3a199d03866de2de30909faee90e
     }    
     
     public void eaten(){
@@ -67,18 +74,18 @@ public class basilisk extends Actor
     public void eat(){
         Actor actor2 = getOneObjectAtOffset( 0, 0, komatsuna.class ); 
         
-        getWorld().showText(""+komatsuna, 50, 550);
+        //getWorld().showText(""+komatsuna, 50, 550);
         if( actor2 != null){
             komatsuna++;
             if(komatsuna == 1)
             {
                 getWorld().removeObject( actor2 );
-                getWorld().showText("           ポイントアップ!", 100, 50);
+                getWorld().showText("ポイントアップ!", 100, 50);
             }
             if(komatsuna == 2)
             {
                 getWorld().removeObject( actor2 );
-                getWorld().showText("           ポイントアップ!!!!!!!!!!!!", 100, 50);
+                getWorld().showText("ポイントアップ!!!!!", 100, 50);
             }
         }
     }
