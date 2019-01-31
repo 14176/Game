@@ -12,6 +12,7 @@ public class snake extends Actor
      * Act - do whatever the snake wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
     public void act() 
     {
         move();
@@ -20,9 +21,7 @@ public class snake extends Actor
     
     public void move()
     {
-        //追跡
     }
-    
     
     public void eat()
     {
