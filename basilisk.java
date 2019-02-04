@@ -28,13 +28,8 @@ public class basilisk extends Actor
         setRotation(0);
         move(5);
 
-    }// Add your action code here.
+    }
 
-
-
-        // Add your action code here.
-
-    //    }// Add your action code here.
 
         if( Greenfoot.isKeyDown( "up" ) ){
         setRotation(270);
@@ -50,15 +45,10 @@ public class basilisk extends Actor
         setRotation(180);
         move(5);
         }
-<<<<<<< HEAD
 
-
-
-=======
-        
         x = getX();
         y = getY();
->>>>>>> 26771355630a3a199d03866de2de30909faee90e
+
     }    
     
     public void eaten(){
@@ -66,7 +56,7 @@ public class basilisk extends Actor
       Actor basilisk = getOneObjectAtOffset( 0, 0, basilisk.class ); 
       if( actor != null ){ 
               getWorld().removeObject( basilisk );
-              getWorld().showText("eat", 100, 50); 
+              getWorld().showText("逃走失敗！！！", 500, 450); 
               Greenfoot.stop();           
       }
     }
@@ -74,7 +64,8 @@ public class basilisk extends Actor
     public void eat(){
         Actor actor2 = getOneObjectAtOffset( 0, 0, komatsuna.class ); 
         
-        getWorld().showText(""+komatsuna, 50, 550);
+  
+        getWorld().showText("komatsuna : "+komatsuna, 100, 170);
         if( actor2 != null){
             komatsuna++;     
             if(komatsuna == 1)

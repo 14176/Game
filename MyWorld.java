@@ -32,16 +32,12 @@ public class MyWorld extends World
         X2=1000;
         Y1=0;
         Y2=900;
-<<<<<<< HEAD
         rtime = 12000;
-=======
+        rtime = 12000;
 
-        rtime = 12000;
         s1 = 60;
         s2 = 60;
 
-        rtime = 1000;
->>>>>>> abc1c7bb4089f3497b1d028840d1c6b41af6be8f
         point = 0;
         basilisk.komatsuna = 0;
         
@@ -63,10 +59,8 @@ public class MyWorld extends World
     
     public void act(){
         rtime--;
-<<<<<<< HEAD
         point = (int)(12000 - rtime) / 100;
-=======
-
+        
         if(rtime % 100 == 0){
         s1--;
     }
@@ -103,69 +97,68 @@ public class MyWorld extends World
 
     
     
+       
+        
 
-        point = (int)(1000 - rtime) / 100;
->>>>>>> abc1c7bb4089f3497b1d028840d1c6b41af6be8f
-        showText(""+rtime, 50, 350);
-        showText(+point+"pt", 100, 80);
+
+       //showText(+point+"pt", 100, 80);
         if(basilisk.komatsuna == 0){
-                showText(+point+"pt", 100, 80);
+                showText("GetPoint : "+point+"pt", 100, 100);
             }else if(basilisk.komatsuna == 1){
                 point += 30;
-                showText(+point+"pt", 100, 80);
-                showText("ポイントアップ!", 100, 50);
+                showText("GetPoint : "+point+"pt", 100, 100);
+                showText("いいね!", 100, 70);
             }else if(basilisk.komatsuna == 2){
                 point += 60;
-                showText(+point+"pt", 100, 80);
-                showText("ポイントアップ!", 100, 50);
+                showText("GetPoint : "+point+"pt", 100, 100);
+                showText("その調子だ!", 100, 70);
             }else if(basilisk.komatsuna == 3){
                 point += 90;
-                showText(+point+"pt", 100, 80);
-                showText("ポイントアップ!", 100, 50);
+                showText("GetPoint : "+point+"pt", 100, 100);
+                showText("やるじゃん!", 100, 70);
             }else if(basilisk.komatsuna == 4){
                 point += 120;
-                showText(+point+"pt", 100, 80);
-                showText("ポイントアップ!", 100, 50);
+                showText("GetPoint : "+point+"pt", 100, 100);
+                showText("すごいね!！", 100, 70);
             }else if(basilisk.komatsuna == 5){
                 point += 150;
-                showText(+point+"pt", 100, 80);
-                showText("ポイントアップ!", 100, 50);
+                showText("GetPoint : "+point+"pt", 100, 100);
+                showText("瞬足だね!", 100, 70);
             }else if(basilisk.komatsuna == 6){
                 point += 180;
-                showText(+point+"pt", 100, 80);
-                showText("ポイントアップ!", 100, 50);
+                showText("GetPoint : "+point+"pt", 100, 100);
+                showText("油断しないで!", 100, 70);
             }else if(basilisk.komatsuna == 7){
                 point += 210;
-                showText(+point+"pt", 100, 80);
-                showText("ポイントアップ!", 100, 50);
+                showText("GetPoint : "+point+"pt", 100, 100);
+                showText("無理しないで!", 100, 70);
             }else if(basilisk.komatsuna == 8){
                 point += 240;
-                showText(+point+"pt", 100, 80);
-                showText("ポイントアップ!", 100, 50);
+                showText("GetPoint : "+point+"pt", 100, 100);
+                showText("逃げ切るんだ!", 100, 70);
             }else if(basilisk.komatsuna == 9){
                 point += 270;
-                showText(+point+"pt", 100, 80);
-                showText("ポイントアップ!", 100, 50);
+                showText("GetPoint : "+point+"pt", 100, 100);
+                showText("最高だね!", 100, 70);
             }else if(basilisk.komatsuna == 10){
                 point += 300;
-                showText(+point+"pt", 100, 80);
-                showText("ポイントアップ!", 100, 50);
+                showText("GetPoint : "+point+"pt", 100, 100);
+                showText("才能あるね!", 100, 70);
             }else if(basilisk.komatsuna == 11){
                 point += 330;
-                showText(+point+"pt", 100, 80);
-                showText("ポイントアップ!", 100, 50);
+                showText("GetPoint : "+point+"pt", 100, 100);
+                showText("あとちょっと！", 100, 70);
             }else if(basilisk.komatsuna == 12){
                 point += 360;
-                showText(+point+"pt", 100, 80);
-                showText("ポイントアップ!", 100, 50);
+                showText("GetPoint : "+point+"pt", 100, 100);
+                showText("やるね!", 100, 70);
             }
-<<<<<<< HEAD
-     
-=======
 
->>>>>>> abc1c7bb4089f3497b1d028840d1c6b41af6be8f
+
+           
+
         if(rtime <= 0){
-            showText("クリア!!!!!!!!!!!!", 500,300);
+            showText("逃走成功！！！", 500,450);
             Greenfoot.stop();
         }
         if(rtime%1000 == 0)
